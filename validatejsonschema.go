@@ -48,6 +48,7 @@ func main() {
 			for _, desc := range res.Errors() {
 				fmt.Printf("- %s\n", desc)
 			}
+			os.Exit(1)
 		}
 	}
 }
